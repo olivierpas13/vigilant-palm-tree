@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
 
+<!-- I like the amount of meta tag used, I'd like a description meta tag too. -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Carlos Hernandez">
     <title>Web Concepts</title>
 </head>
+
+
 
 <body>
     <header>
@@ -33,6 +36,7 @@
                 proveen acceso a la red.
             </p>
             <h2>Protocols</h2>
+            <!-- Although these can be considered protocols I would've liked to see them grouped by layers of the TCP/IP model. -->
             <section>
                 <h3>Data Link</h3>
                 <p>Es el nivel mas bajo de los protocolos, engloba a la parte fisica
@@ -51,17 +55,21 @@
                     es decir: servidores web, aplicaciones o paginas.
                 </p>
                 <h3>Transport</h3>
+                <!-- "Box de prueba" is not a correct term, I would've liked to see a better explanation of what a TCP handshake is. -->
+                <!-- TCP doesn't create a bottleneck, it creates a connection between the client and the server. In fact it prevents bottlenecks  -->
                 <p>En este protocolo tenemos el <strong>TCP</strong>(Transmission Control
                     Protocol), este protocolo es el primer filtro en la parte relacionada al
                     software, es la que se encarga de crear un puente entre el cliente y el
                     servidor es decir manda un box de prueba que va como un explorador para 
                     observar si existe una conexion.<br>
+                    
                     Tambien se encarga de crear un cuello de botella que fragmenta la informacion
                     en chunks mas pequeños ayudando a evitar que la red o puente se sature. Este 
                     protocolo es <strong>independiente</strong>, quiere decir que debes hacerlo cada vez que busques
                     establecer una conexion con un servidor o pagina web
                 </p>
                 <h3>Aplicaciones</h3>
+                <!-- I'm assuming "increptado" is a typo -->
                 <p>Aqui tenemos los protocolos usados para paginas web o Aplicaciones
                     que tiene su ubicacion en la red, el mas usado es <strong>Http</strong>
                     el cual se basa en reglas de creacion y de verificacion de sitios web, en 
@@ -71,7 +79,9 @@
                 </p>
             </section>
             <h3>Structures</h3>
+            <!-- Web page structure is a more appropriate term -->
             <p>Se usan tres partes fundamentales para crear algo en la web, estas son:
+                <!-- Good explanation although I would've liked the explanation to not be just copy-pasted from the presentation -->
                 <ul>
                     <li><h4>HTML</h4>
                         <p>Hypertext Markup Language is the standard markup
@@ -92,6 +102,7 @@
                 </ul>
             </p>
             <h3>World Wide Web</h3>
+            <!-- I would've liked bibliographic references for the information provided. -->
             <p>Es el internet como software, este no se puede comprar o poseer,
                 todo gracias a mi pana el <strong>Bill Gates</strong> que peleo sucio
                 contra el primer servicio de internet, y ya pues lo metieron horrenda
@@ -104,7 +115,7 @@
         <footer>
             <p>Contactos: Por Whatssapp<br>
                 Debilidad: Besitos en el cuello<br>
-                <strong>EL OLI SE LA COME</strong>
+                <!-- Inappropriate  -->
             </p>
         </footer>
     </main>
