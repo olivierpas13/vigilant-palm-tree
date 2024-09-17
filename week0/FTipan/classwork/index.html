@@ -1,64 +1,130 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Fréderick Tipán">
-    <meta name="description" content="Contenido relacionado a la primera semana de clases de webdevelopment 101">
+  <head>
+    <!-- Great use of meta tags, I would've liked to see new meta tags though -->
+    <meta charset="UTF-8" />
+    <meta name="author" content="Fréderick Tipán" />
+    <meta
+      name="description"
+      content="Contenido relacionado a la primera semana de clases de webdevelopment 101"
+    />
     <title>Classwork week 0 FT</title>
-</head>
-<body>
+  </head>
+  <body>
+    <!-- I'm assuming comentatio is a typo but I really like the use of comments -->
     <!--Este es un comentatio en HTML-->
 
     <h1>Classwork Week 0</h1>
     <h2>Internet Protocol Suite</h2>
-    <p>Es un conjunto de protocolos conocidos como TCP/IP, el cual se encuentra dividio en 4 partes:</p>
+    <!-- dividido* -->
+    <p>
+      Es un conjunto de protocolos conocidos como TCP/IP, el cual se encuentra
+      dividio en 4 partes:
+    </p>
     <dl>
-        <dt><strong>Aplicación:</strong> Define reglas para el intercambio de datos</dt>
-        <dd>El HTTP es el estandar el intercambio de datos en la web. Pueden haber varias solicitudes HTTP a partir de una misma conexión.</dd>
+      <dt>
+        <strong>Aplicación:</strong> Define reglas para el intercambio de datos
+      </dt>
+      <!-- It would've been a good idea to define HTTP more clearly -->
+      <dd>
+        El HTTP es el estandar el intercambio de datos en la web. Pueden haber
+        varias solicitudes HTTP a partir de una misma conexión.
+      </dd>
 
-        <dt><strong>Transporte:</strong> Formas en las que se transportan los paquetes de información</dt>
-        <dd>El TCP hace la transferencia de forma segura al verificar la conexión entre el cliente y el servidor mediante SYN/SYN-ACK/ACK.</dd>
+      <dt>
+        <strong>Transporte:</strong> Formas en las que se transportan los
+        paquetes de información
+      </dt>
+      <!-- That process is called 3 way handshake -->
+      <dd>
+        El TCP hace la transferencia de forma segura al verificar la conexión
+        entre el cliente y el servidor mediante SYN/SYN-ACK/ACK.
+      </dd>
 
-        <dt><strong>Network:</strong> Acepta y manda paquetes en el internet</dt>
-        <dd> Se usa la "IP", que se trata de un identificador único para cada equipo, se clasifican entre públicas y privadas. Actualmente se utiliza mucho la IPv4, pero se trata de pasar a una IPv6.</dd>
+      <dt><strong>Network:</strong> Acepta y manda paquetes en el internet</dt>
+      <dd>
+        Se usa la "IP", que se trata de un identificador único para cada equipo,
+        se clasifican entre públicas y privadas. Actualmente se utiliza mucho la
+        IPv4, pero se trata de pasar a una IPv6.
+      </dd>
 
-        <dt><strong>Data Link:</strong> Hardware</dt>
-        <dd>Se refiere a la infraestructura física del internet como tal (servidores y cables de conexión).</dd>
+      <dt><strong>Data Link:</strong> Hardware</dt>
+      <dd>
+        Se refiere a la infraestructura física del internet como tal (servidores
+        y cables de conexión).
+      </dd>
     </dl>
-
+    <!-- 👍 -->
     <p><strong>Internet != WWW</strong></p>
 
     <h2>Conexión en la Web</h2>
     <ul>
-        <li><strong>URL: </strong>Uniform Resource Locator, es la dirección completa hacia una página web en específico.</li>
-        <li><strong>Browser: </strong>Conocido como "cliente", es una aplicación que permite interactuar con la información del WWW.</li>
-        <li><strong>Server: </strong>Espacio pendiete a la espera de un asolicitud http para devolver una respuesta dentro del contenido de la página web.</li>
-        <li><strong>Dominio: </strong>Asocia a una persona u organización mediante un registro único, identificable entre toda la web.</li>
-        <li><strong>DNS: </strong>Domain Name System, asigna un nombre a la dirección IP.</li>
-    </ul>
-    
-    <h2>Estructura de una página web</h2>
-    <dl>
-        <dt><strong>HTML</strong></dt>
-            <dd>Hypertext Markup Language, define la estructura y distribución de la pagina web</dd>
-        <dt><strong>CSS</strong></dt>
-            <dd>Cascading Style Sheets Language, permite aplicar estilos a la página web</dd>
-        <dt><strong>Java Script</strong></dt>
-            <dd>Lenguaje de programación que permite agregar lógica y hacer interactiva a la página web.</dd>
-    </dl>
-    
-    <h2>DOM (Document Objet Model)</h2>
-    <p>Corresponde a la representación de los elementos que conforman una página web, partiendo desde un documento HTLM.</p>
-    
-    <ul>
-        <li><strong>Doctype:</strong>Declaración que muestra al navegador que versión de HTML se está usando</li>
-        <li><strong>html:</strong>Raiz del documento</li> 
-        <li><strong>Head:</strong>Se incluyen metadatos, título de la página web, su descripción en el navegador y entre otros. No se muestra esta información al usuario</li> 
-        <li><strong>Body:</strong>Contiene todo el apartado visual presentado al usuario</li> 
+      <li>
+        <strong>URL: </strong>Uniform Resource Locator, es la dirección completa
+        hacia una página web en específico.
+      </li>
+      <li>
+        <strong>Browser: </strong>Conocido como "cliente", es una aplicación que
+        permite interactuar con la información del WWW.
+      </li>
+      <!-- pendiente* -->
+      <!-- Server is not an space, it's a computer or device that provides services to other computers or clients -->
+      <li>
+        <strong>Server: </strong>Espacio pendiete a la espera de un asolicitud
+        http para devolver una respuesta dentro del contenido de la página web.
+      </li>
+      <li>
+        <strong>Dominio: </strong>Asocia a una persona u organización mediante
+        un registro único, identificable entre toda la web.
+      </li>
+      <li>
+        <strong>DNS: </strong>Domain Name System, asigna un nombre a la
+        dirección IP.
+      </li>
     </ul>
 
-    <footer>
-         © Frederick Tipán
-    </footer>
-</body>
+    <h2>Estructura de una página web</h2>
+    <dl>
+      <dt><strong>HTML</strong></dt>
+      <dd>
+        Hypertext Markup Language, define la estructura y distribución de la
+        pagina web
+      </dd>
+      <dt><strong>CSS</strong></dt>
+      <dd>
+        Cascading Style Sheets Language, permite aplicar estilos a la página web
+      </dd>
+      <dt><strong>Java Script</strong></dt>
+      <dd>
+        Lenguaje de programación que permite agregar lógica y hacer interactiva
+        a la página web.
+      </dd>
+    </dl>
+
+    <h2>DOM (Document Objet Model)</h2>
+    <p>
+      Corresponde a la representación de los elementos que conforman una página
+      web, partiendo desde un documento HTLM.
+    </p>
+    <!-- 👍 -->
+    <!-- Great explanation -->
+    <ul>
+      <li>
+        <strong>Doctype:</strong>Declaración que muestra al navegador que
+        versión de HTML se está usando
+      </li>
+      <li><strong>html:</strong>Raiz del documento</li>
+      <li>
+        <strong>Head:</strong>Se incluyen metadatos, título de la página web, su
+        descripción en el navegador y entre otros. No se muestra esta
+        información al usuario
+      </li>
+      <li>
+        <strong>Body:</strong>Contiene todo el apartado visual presentado al
+        usuario
+      </li>
+    </ul>
+    <!-- 👍 -->
+    <footer>© Frederick Tipán</footer>
+  </body>
 </html>
