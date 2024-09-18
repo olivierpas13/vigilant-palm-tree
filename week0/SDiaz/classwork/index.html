@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassworkW0</title>
+    <style>
+        body {
+            font-family:'Times New Roman', Times, serif;
+            margin: 20px;
+        }
+        .tema{margin-bottom: 20px;
+        }
+        .titulo-azul{
+            color: royalblue;
+        }
+        .titulo-verde{
+            color:rgba(113, 212, 151, 0.829)
+        }
+        p {
+            line-height: 1.2;
+        }
+        ul {
+        list-style-type: none; 
+        padding-left: 0; 
+        }
+
+        ul li::before {
+        content: '•'; 
+        color: rgb(53, 155, 92); 
+        font-size: 20px; 
+        margin-right: 10px; 
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Classwork Week 0 - Concepts </h1>
+    </header>
+    <main>
+        <section>
+            <p><b>Actividad:</b> Create a brief HTML webpage explaining week 0 concepts, make sure to use several tags and semantic HTML.</p>
+        </section>
+        <section class="tema">
+            <h2 class="titulo-verde", style="font-size: 20px;">Internet & IPS</h2>
+            <p><b>Internet:</b> Es una red global de dispositivos conectados mediante protocolos, el Protocolo de Internet (IP) es uno de los protocolos más importantes en esta conexión. </p>
+            <p><b>IPS (Internet Protocol Suite):</b> es un conjunto de protocolos de comunicación utilizados para la transmisión de datos a través de redes, contiene 4 capas importantes:</p>    
+            <h3 class="titulo-azul", style="font-size: 16px;"> 1 Aplicación</h3>
+            <p>Son servicios de red que permiten que el sw interactúe con la red, usa protocolos como <b>HTTP, HTTPS</b>. </p>
+            <h3 class="titulo-verde", style="font-size: 16px;" > 2 Transporte</h3>
+            <p>Sirve para gestionar la transmisión de datos mediante el protocolo <b>TCP (Transmission Control Protocol)</b>. </p>
+            <p>Los mensajes <b>SYN, SYN-ACK, ACK</b> son utilizados durante el proceso de establecer conexión entre 2 dispositivos.</p>
+            <p>Cliente --SYN-> Servidor: se pide una conexión.</p>
+            <p>Servidor --SYN-ACK-> Cliente: se confirma la solicitud y se sincroniza.</p>
+            <p>Cliente --ACK-> Servidor: se confirma la respuesta del servidor.</p>
+            <h3 class="titulo-azul", style="font-size: 16px;"> 3 Network</h3>
+            <p>Es la dirección o la ruta de los paquetes a traves de la red, se usan direcciones <b>IP (Internet Protocol).</b> </p>
+            <ul>
+                <li>IPv4: Protocolo de 32 bits, puede llegar máx hasta 255, 4 números separados por puntos.</li>
+                <li>IPv6: Protocolo de 128 bits, usa hexadecimales y está separado por 2 puntos (:).</li>
+            </ul>
+            <h3 class="titulo-verde", style="font-size: 16px;"> 4 Datalink</h3>
+            <p>Tiene que ver con el hardware, es decir, conexión física sus protocolos se dan mediante wi-fi, etc. </p>   
+        </section>
+
+        <section class="tema">
+            <h2 class="titulo-azul", style="font-size: 20px;"> WWW & HTTP</h2>
+            <p>La <b>WWW (World Wide Web):</b> es una colección global de recursos en la red. </p>   
+            <p><b>HTTP y HTTPS:</b> son protocolos que se utilizan para transferir recursos desde los servidores hasta el navegador. </p>
+            <p>HTTP --> comunicación básica, HTTPS --> agrega seguridad cifrando la información transferida.</p>          
+        </section>
+
+        <section class="tema">
+            <h2 class="titulo-verde", style="font-size: 20px;"> Conexión</h2>
+            <ul>
+                <li><b>URL (Uniform Resource Locator):</b> es la dirección web que se escribe para acceder a una ubicación (página web). </li>   
+                <li><b>BROWSER:</b> conocido como cliente, es el programa que se usa para acceder a las páginas web (como Chrome, Firefox, etc). </li>  
+                <li><b>SERVER</b> es el que recibe la solicitud, busca el recurso y envía una respuesta al navegador. </li>
+                <li><b>DOMAIN:</b> es la parte de la URL que identifica el nombre de un sitio web. </li> 
+                <li><b>DNS (Domain Name System):</b> es el que traduce los nombres de los dominios a una dirección IP. </li> 
+            </ul>
+              
+        </section>
+
+        <section>
+            <h2 class="titulo-azul", style="font-size: 20px;"> Estructura de una página Web</h2>
+            <ul>
+                <li><b>HTML (HyperText Markup Language):</b> es el lenguaje de marcado utilizado para estructurar el contenido en la web, es decir los huesos o el esqueleto. </li>   
+                <li><b>JavaScript:</b> es un lenguaje de programación que permite añadir interactividad a una página web, se podría decir que equivale a los músculos. </li>  
+                <li><b>CSS:</b> es el lenguaje con el que le damos estilos al contenido etiquetado con HTML, se asemeja a la piel del ser humano. </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Stefy Díaz</p>
+    </footer>
+</body>
+</html>
