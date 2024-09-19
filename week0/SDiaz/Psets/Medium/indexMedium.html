@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PsetMediumW0</title>
+    <style>
+        body {
+            background-color: rgb(53, 52, 52);
+            color: #ffffff;
+            font-family:'Times New Roman', Times, serif;
+            margin: 20px 75px;
+            line-height: 1.8;
+        }
+        .tema{
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 17px;
+            line-height: 1.8;
+        }
+        .pequenio {
+            font-size: 10px;
+        }
+        a {
+            color: rgb(235, 172, 211);
+            text-decoration: underline;
+        }
+        a:hover {
+            color: aquamarine;
+            text-decoration: underline;
+        }
+        a:visited {
+            color: pink;
+        }
+        nav {
+            background-color:rgb(53, 52, 52);
+            padding: 10px;
+            width: 200px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin-bottom: 10px;
+        }
+        nav ul li a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            padding: 5px 10px;
+            display: block;
+        }
+        nav ul li a:hover {
+            background-color: #53828a;
+            color: rgb(221, 173, 173);
+        }
+        .container {
+            display: flex;
+        }
+        .sidebar {
+            width: 20%;
+            background-color: #f4f4f4;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .content {
+            width: 60%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .centrar {
+            display: block; 
+            margin-left: auto;
+            margin-right: auto; 
+        }
+        .centrarTexto{
+            text-align:center;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul li::before {
+            color: pink;
+            content: "•";
+            font-size: 20px;
+            margin-right: 10px;
+        }
+        details {
+            color: rgb(255, 255, 255);
+            border: #53828a;
+            cursor: pointer;
+        }
+        summary {
+            font-size: 16px;
+        }
+        details[open]{
+            background-color: pink;
+        }
+        details section {
+            padding: 10px 0;
+            background-color: rgb(53, 52, 52);
+        }
+        mark{
+            background-color: bisque;
+        }
+        img {
+            border-radius: 5px;
+            padding: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid rgb(255, 255, 255);
+            padding: auto;
+            text-align: center;
+        }
+        th {
+            background-color: pink;
+        }
+        form {
+            width: 65%;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .forms {
+            margin-bottom: 15px;
+        }
+        label {
+            display:inline-block;
+            margin-bottom: 5px;
+            margin-right: 10px;
+            text-align: right;
+        }
+        input[type="number"],
+        input[type="tel"],
+        input[type="text"],
+        input[type="password"],
+        textarea {
+            display:inline-block;
+            width: 300px;
+            box-sizing: border-box;
+            padding: 5px;
+        }
+        textarea {
+            resize: both;
+        }
+        input[type="submit"],
+        input[type="reset"],
+        button {
+            padding: 10px 20px;
+            background-color: pink;
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            color: black;
+            background-color: rgb(233, 238, 190);
+        }
+
+        input[type="reset"]:hover {
+            background-color: rgb(233, 223845, 190);
+            color: black;
+        }
+
+    
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Hello World! </h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="#technologies">Technologies to Learn</a>
+            </li>
+            <li>
+                <a href="#schedule">Schedule</a>
+            </li>
+            <li>
+                <a href="#ubication">Ubication</a>
+            </li>
+            <li>
+                <a href="#aboutMe">About Me</a>
+            </li>
+            <li>
+                <a href="#example">Example Of Form</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section id="technologies" class="tema">
+            <h2 style="font-size: 20px;"> Technologies to Learn </h2>
+            <p>I will learn the following technologies: </p>
+            <ul>
+                <li>
+                    1. HTML
+                </li>
+                <li>
+                    2.  CSS     
+                </li>
+                <li>
+                    3. JavaScript
+                </li>
+            </ul>
+            <img src="imagenes/code1.jpg" title="Person programming :)" width="500" class="centrar">
+            <p>
+                Person programming
+            </p>
+        </section>
+    
+        <section id="schedule">
+            <h2 style="font-size: 20px;"> My Schedule </h2>
+            <ul>
+                <li>
+                    Let me explain
+                </li>
+                <li>
+                    First, I'll learn <a href="https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/HTML_basics">HTML</a>     
+                </li>
+                <li>
+                    Then, I'll learn CSS
+                </li>
+                <li>
+                    Finally, I'll learn JavaScript
+                </li>
+            </ul>
+            <details>
+                <summary> 
+                    What is <mark>JavaScript</mark> ? 
+                </summary>
+                <section>
+                    <p> 
+                        JavaScript es el lenguaje de programación que debes usar para añadir características interactivas a tu sitio web, (por ejemplo, juegos, eventos que ocurren cuando los botones son presionados o los datos son introducidos en los formularios, efectos de estilo dinámicos, animación, y mucho más).
+                    </p>
+                </section>
+            </details>
+            <img src="imagenes/code2.webp" title="Anothe person programming" width="500" class="centrar">
+        </section>
+        
+        <section id="ubication">
+            <h2 style="font-size: 20px;"> Ubication! </h2>
+            <p>
+                So, I live in:
+            </p>
+            <p>
+                <i>Mena 2</i>
+            </p>
+            <p>
+                <i>A lado del bosque :) kjdnjs</i>
+            </p>
+        </section>
+
+        <section class="tema">
+            <h2 style="font-size: 20px">My goal</h2>
+            <p>
+                Speak English fluently
+            </p>
+            <p>
+                Knowing how to play all my favorite songs on guitar
+            </p>
+          </section>
+
+        <section class="tema">
+            <h2 style="font-size: 20px">Table</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th> </th>
+                        <th> Programming languages</th>
+                        <th> Difficulties</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> Friendly languages</td>
+                        <td> Python</td>
+                        <td> Very friendly language for beginners </td>   
+                    </tr>
+                    <tr>
+                        <td> Cryptic languages</td>
+                        <td> C</td>
+                        <td> The complete opossite of Python, very cryptic <br>
+                             Another row in c, cause of rowspan
+                        </td>   
+                    </tr>
+                    <tr>
+                        <td> This is a table row header	</td>
+                        <td> HTML</td>
+                        <td> Not really difficult but it has a lot of things to learn </td>   
+                    </tr>
+                    <tr>
+                        <td colspan="3">Every programming language can become challenging, but you should try to know at least a bit about every one</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="tema"></section>
+            <h2 style="font-size: 20px">This is going to be a form </h2>
+            <form action="/submit" method="post">
+                <fieldset>
+                    <legend> Personal Information </legend>
+                    <section class="forms"> 
+                        <label for="firstName"> First Name: </label>
+                        <input type="text" id="firstName" name="firstName" placeholder="Escriba su nombre aquí">
+                    </section>
+
+                    <section class="forms"> 
+                        <label for="lastName"> Last Name: </label>
+                        <input type="text" id="lasttName" name="lastName" placeholder="Escriba su apellido aquí">
+                    </section>
+
+                    <section class="forms"> 
+                        <label for="password"> Password: </label>
+                        <input type="password" id="password" name="password" placeholder="Your password"></textarea>
+                    </section>
+
+                    <section class="forms"> 
+                        <label for="phone"> Phone Number: </label>
+                        <input type="tel" id="phone" name="phone" placeholder="Ingrese su número de teléfono">
+                    </section>
+
+                    <section class="forms"> 
+                        <label for="decade"> Favorite decade of the last years: </label>
+                        <input type="number" id="decade" name="decade" min="1900" max="2024" placeholder="Ejemplo: 1950">
+                    </section>
+
+                    <section class="forms"> 
+                        <label for="music">Selecciona tu género musical favorito:</label> 
+                        <select id="music" name="music">
+                            <option value="" disabled selected> Select ur music genre</option>
+                            <option value="pop">Pop</option> 
+                            <option value="rock">Rock</option> 
+                            <option value="indie">Indie</option> 
+                            <option value="electronic">Electrónica</option> 
+                            <option value="alternativo">Alternativo</option> 
+                        </select>
+                    </section> 
+                </fieldset>
+
+                <fieldset>
+                    <legend> What is your favorite food? </legend>
+                    <input type="checkbox" id="tacos" name="food" value="tacos">
+                    <label for="tacos"> Tacos </label> 
+
+                    <input type="checkbox" id="pizza" name="food" value="pizza">
+                    <label for="pizza"> Pizza </label> 
+
+                    <input type="checkbox" id="bbqWings" name="food" value="bbqWings">
+                    <label for="bbqWings"> BBQ Wings </label> 
+
+                    <input type="checkbox" id="other" name="food" value="other">
+                    <label for="other"> Other </label> 
+                </fieldset>
+
+                <fieldset>
+                    <legend> Choose your career </legend>
+                    <input type="radio" id="civilEngr" name="career" value="civilEngr">
+                    <label for="civilEngr"> Civil Engineering</label> <br>
+
+                    <input type="radio" id="swEngr" name="career" value="swEngr">
+                    <label for="swEngr"> Software Engineering</label> <br>
+                    
+                    <input type="radio" id="doctor" name="career" value="doctor">
+                    <label for="doctor"> Doctor </label> <br>
+
+                    <input type="radio" id="other" name="career" value="other">
+                    <label for="other"> Other</label> <br>                
+                </fieldset>
+
+                <fieldset>
+                    <legend> Send me a note </legend>
+                    <label for="message"> Your Message: </label> <br>
+                    <textarea id="message" name="message" rows="4" placeholder="Type ur message here..."></textarea> <br> 
+                </fieldset>
+
+                <section class="forms">
+                    <input type="submit"  value="Submit">
+                    <input type="reset" value="Reset">
+
+                </section>
+            </form>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Stefy Díaz</p>
+    </footer>
+</body>
+</html>
