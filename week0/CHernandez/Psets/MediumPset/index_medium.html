@@ -23,8 +23,8 @@
             <li><a href="index_medium.html#Things">Cosas por hacer</a></li>
             <li><a href="index_medium.html#Planeacion">Planeacion</a></li>
             <li><a href="index_medium.html#Ubicacion">Ubicacion</a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
+            <li><a href="index_medium.html#formulario">Formulario</a></li>
+            <li><a href="index_easy.html">Acerca de mi</a></li>
         </ul>
     </nav>
     <main>
@@ -39,7 +39,7 @@
             </ol>
         </article>
         <figure>
-            <img src="pizza.jpg" alt="Foto de pizza con Piña" width="500" height="450" title="Pizza">
+            <img src="images/pizza.jpg" alt="Foto de pizza con Piña" width="500" height="450" title="Pizza">
             <figcaption>Pizza con piña porque no hay mejor pizza</figcaption>
         </figure>
         <section>
@@ -64,7 +64,7 @@
             </details>
         </div>
         <figure>
-            <img src="terror.jpg" alt="Una pelicula que causa terror" width="500" height="450" title="Terror">
+            <img src="images/terror.jpg" alt="Una pelicula que causa terror" width="500" height="450" title="Terror">
             <figcaption>Una pelicula de completo terror por lo que sucede. <small>Mirala Oli</small></figcaption>
         </figure>
         <hr>
@@ -122,7 +122,108 @@
                 </tbody>
             </table>
         </section>
+        <article id="formulario">
+            <h2>Esto es un formulario</h2>
+            <form action="submit" method="get">
+                <!-- Se usa el metodo get, porque no es un formulario grande y no es informacion de claves, etc -->
+                <div>
+                    <fieldset>
+                        <legend>Info Importante</legend>
+                        <p>
+                            <label for="nombre">Primer nombre </label>
+                            <input type="text" name="nombre" id="nombre" placeholder="Krisbell" required>
+                        </p>
+                        <p>
+                            <label for="apellido">Apellido</label>
+                            <input type="text" name="apellido" id="apellido" required>
+                        </p>
+                        <p>
+                            <label for="numero">Numero de Telefono</label>
+                            <input type="tel" name="numero" id="numero" required>
+                        </p>
+                        <p>
+                            <label for="creditCard">Id Tarjeta de Credito</label>
+                            <input type="password" name="creditCard" id="creditCard" required>
+                        </p>
+                        <p>
+                            <label for="edad">Edad</label>
+                            <input type="number" name="edad" id="edad" min="5" step="1" max="23" value="5">
+                        </p>
+                        <p>
+                            <label for="pizza">Pizza Favorita</label>
+                            <select id="favPizza">
+                                <optgroup label="PizzasGod">
+                                    <option value="Hawaiana">Hawaiana</option>
+                                    <option value="Salami">Salami"</option>
+                                    <option value="Peperoni">Peperoni</option>
+                                </optgroup>
+                                <optgroup label="Pizzas meh">
+                                    <option value="Chocolate">Chocolate</option>
+                                    <option value="Camaron">Camaron</option>
+                                </optgroup>
+                                <option value="IDK">No me gusta la pizza, soy gay</option>
+                            </select>
+                        </p>
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>Animal Favorito</legend>
+                        <p>
+                            <input type="radio" name="gatos" id="gatos">
+                            <label for="gatos">Gatos</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="perros" id="perros">
+                            <label for="perros">Perros</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="otro" id="otro">
+                            <label for="otro">Otros</label>
+                        </p>
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>Que peli has visto</legend>
+                        <p>
+                            <input type="checkbox" name="mariposa" id="mariposa">
+                            <label for="mariposa">Efecto Mariposa</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="resplandor" id="resplandor">
+                            <label for="resplandor">El eterno resplandor de una mente sin recuerdos</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="laland" id="laland">
+                            <label for="laland">La la land</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="ninguna" id="ninguna">
+                            <label for="ninguna">Ninguna</label>
+                        </p>
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>DM</legend>
+                        <label for="mensajes">Mensajes al DM</label><br><br>
+                        <textarea name="mensajes" id="mensajes" cols="45" rows="5" placeholder="Pam Regresa"></textarea>
+                    </fieldset>
+                </div>
+                <button type="submit">Submit</button>
+                <button type="post">Post</button>
+                <button type="reset">Reset</button>
+            </form>
+        </article>
     </main>
+    <br>
+    <hr>
+    <footer>
+        <p>&copy; Carlos Hernandez<br>
+            Contacos:<strong>099-Dios-quiero-un-brownie</strong>
+        </p>
+    </footer>
 
 </body>
 
