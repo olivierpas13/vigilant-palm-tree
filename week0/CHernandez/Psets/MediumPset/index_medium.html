@@ -1,6 +1,6 @@
+<!-- FINAL VERSION -->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,221 +10,238 @@
 </head>
 
 <body>
-    <header>
-        <h1>Week 0 Medium Pset</h1>
-        <p>Recreate the following web page <a href="https://html-101-nu.vercel.app/" title="Pagina de Ejemplo">Pagina
-                OLI</a> (the content can be modified to
-            represent yourself or your hobby), keep in mind the page has an anchor element that redirects to
-            another page, adding CSS is optional but recommended.</p>
-    </header>
-    <hr>
-    <nav>
-        <ul>
-            <li><a href="index_medium.html#Things">Cosas por hacer</a></li>
-            <li><a href="index_medium.html#Planeacion">Planeacion</a></li>
-            <li><a href="index_medium.html#Ubicacion">Ubicacion</a></li>
-            <li><a href="index_medium.html#formulario">Formulario</a></li>
-            <li><a href="index_easy.html">Acerca de mi</a></li>
-        </ul>
-    </nav>
-    <main>
-        <article>
-            <h2 id="Things">Cosas que quisiera hacer</h2>
-            <p>Estas son las cosas que me apasionan y me gustaria poder realizar</p>
-            <ol>
-                <li>Hacer mi propia Pelicula</li>
-                <li>Realizar un viaje culinario</li>
-                <li>Comprar una casa o cabaña</li>
-                <li><abbr title="Hacer pizza con Amigos">HPA</abbr></li>
-            </ol>
-        </article>
-        <figure>
-            <img src="images/pizza.jpg" alt="Foto de pizza con Piña" width="500" height="450" title="Pizza">
-            <figcaption>Pizza con piña porque no hay mejor pizza</figcaption>
-        </figure>
-        <section>
-            <h2 id="Planeacion">Planeacion a seguir</h2>
-            <p>El camino que pienso seguir para lograrlo es:</p>
+    <div class="container">
+        <header>
+            <h1>Week 0 Medium Pset</h1>
+            <p>Recreate the following web page <a href="https://html-101-nu.vercel.app/"
+                    title="Pagina de Ejemplo">Pagina
+                    OLI</a> (the content can be modified to
+                represent yourself or your hobby), keep in mind the page has an anchor element that redirects to
+                another page, adding CSS is optional but recommended.</p>
+        </header>
+        <hr>
+        <nav>
             <ul>
-                <li>Primero quiero empezar a trabajar, de lo que estudio</li>
-                <li>Segundo, voy a ahorrar para empezar a ver terrenos para comprar</li>
-                <li>Tercero, compro un terreno y un auto barato (escarabajoGod)</li>
-                <li>Para finalizar, usar todos mis ahorros para hacer una pelicula toda bien hecha y con impacto</li>
+                <li><a href="index_medium.html#Things">Cosas por hacer</a></li>
+                <li><a href="index_medium.html#Planeacion">Planeacion</a></li>
+                <li><a href="index_medium.html#Ubicacion">Ubicacion</a></li>
+                <li><a href="index_medium.html#formulario">Formulario</a></li>
+                <li><a href="index_easy.html">Acerca de mi</a></li>
             </ul>
-        </section>
-        <div>
-            <details>
-                <summary>Porque quiero hacer una <mark>pelicula</mark></summary>
-                <p>Alguien podría querer hacer una película para expresar su creatividad y compartir una historia, idea
-                    o mensaje con el mundo. El cine permite transmitir emociones, explorar temas profundos y conectar
-                    con las personas de manera visual y emocional. Además, puede ser una forma de influir en la cultura,
-                    provocar reflexión o simplemente entretener. Para muchos, es una manera poderosa de plasmar su
-                    visión artística y dejar una huella duradera en el público.
-                </p>
-            </details>
-        </div>
-        <figure>
-            <img src="images/terror.jpg" alt="Una pelicula que causa terror" width="500" height="450" title="Terror">
-            <figcaption>Una pelicula de completo terror por lo que sucede. <small>Mirala Oli</small></figcaption>
-        </figure>
-        <hr>
-        <article>
-            <h2 id="Ubicacion">Ubicacion</h2>
-            <p>Yo vivo en:</p>
-            <address>
-                Ecuador-Pichincha-Cayambe<br>
-                Calle Chiriboga y 11 de Diciembre.
-            </address>
-            <p>No me visiten que me pongo timido</p>
-            <section>
-                <h3>Mi Meta proxima</h3>
-                <p>Estar seguro de quien soy y quien quiero ser</p>
+        </nav>
+        <div class="clear"></div>
+        <main>
+            <div class="things-left">
+                <article>
+                    <h2 id="Things">Cosas que quisiera hacer</h2>
+                    <p>Estas son las cosas que me apasionan y me gustaria poder realizar</p>
+                    <ol>
+                        <li>Hacer mi propia Pelicula</li>
+                        <li>Realizar un viaje culinario</li>
+                        <li>Comprar una casa o cabaña</li>
+                        <li><abbr title="Hacer pizza con Amigos">HPA</abbr></li>
+                    </ol>
+                </article>
+                <figure>
+                    <img src="images/pizza.jpg" alt="Foto de pizza con Piña" width="500" height="450" title="Pizza">
+                    <figcaption>Pizza con piña porque no hay mejor pizza</figcaption>
+                </figure>
+            </div>
+            <section class="planning">
+                <h2 id="Planeacion">Planeacion a seguir</h2>
+                <p>El camino que pienso seguir para lograrlo es:</p>
+                <ul>
+                    <li>Primero quiero empezar a trabajar, de lo que estudio</li>
+                    <li>Segundo, voy a ahorrar para empezar a ver terrenos para comprar</li>
+                    <li>Tercero, compro un terreno y un auto barato (escarabajoGod)</li>
+                    <li>Para finalizar, usar todos mis ahorros para hacer una pelicula toda bien hecha y con impacto
+                    </li>
+                </ul>
             </section>
-        </article>
+            <div class="planning">
+                <details>
+                    <summary>Porque quiero hacer una <mark>pelicula</mark></summary>
+                    <p>Alguien podría querer hacer una película para expresar su creatividad y compartir una historia,
+                        idea
+                        o mensaje con el mundo. El cine permite transmitir emociones, explorar temas profundos y
+                        conectar
+                        con las personas de manera visual y emocional. Además, puede ser una forma de influir en la
+                        cultura,
+                        provocar reflexión o simplemente entretener. Para muchos, es una manera poderosa de plasmar su
+                        visión artística y dejar una huella duradera en el público.
+                    </p>
+                </details>
+                <figure>
+                    <img src="images/terror.jpg" alt="Una pelicula que causa terror" width="500" height="450"
+                        title="Terror">
+                    <figcaption>Una pelicula de completo terror por lo que sucede. <small>Mirala Oli</small>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="clear"></div>
+            <hr>
+            <article class="center" id="Ubicacion">
+                <h2>Ubicacion</h2>
+                <p>Yo vivo en:</p>
+                <address>
+                    Ecuador-Pichincha-Cayambe<br>
+                    Calle Chiriboga y 11 de Diciembre.
+                </address>
+                <p>No me visiten que me pongo timido</p>
+                <section>
+                    <h3>Mi Meta proxima</h3>
+                    <p>Estar seguro de quien soy y quien quiero ser</p>
+                </section>
+            </article>
+            <hr>
+            <section class="center">
+                <h2>Tabla de pizzas estilo Xiaomi (calidad precio)</h2>
+                <table class="centrar-tabla">
+                    <caption>Pizzas</caption>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Precio</th>
+                            <th>Sabor</th>
+                            <th>Calificacion</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Hawaiana</th>
+                            <td>Precio accesible</td>
+                            <td>El mejor sabor </td>
+                            <td>10/10</td>
+                        </tr>
+                        <tr>
+                            <th>Salami</th>
+                            <td>Precio Alto</td>
+                            <td>Sabor bueno para ratos</td>
+                            <td>9/10</td>
+                        </tr>
+                        <tr>
+                            <th>Chocolate</th>
+                            <td rowspan="2">Precio demasiado alto</td>
+                            <td rowspan="2">Dios quien creyo que <br>era buena idea</td>
+                            <td rowspan="2">4/10</td>
+                        </tr>
+                        <tr>
+                            <th>Camaron</th>
+                        </tr>
+                        <tr>
+                            <td colspan="4">A buen hambre no hay mal pan, asi que al final todas son 10/10</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <article id="formulario">
+                <h2>Esto es un formulario</h2>
+                <form action="submit" method="get">
+                    <!-- Se usa el metodo get, porque no es un formulario grande y no es informacion de claves, etc -->
+                    <div class="things-left">
+                        <fieldset id="personalInfo">
+                            <legend>Info Importante</legend>
+                            <p>
+                                <label for="nombre">Primer nombre </label>
+                                <input type="text" name="nombre" id="nombre" placeholder="Krisbell" required>
+                            </p>
+                            <p>
+                                <label for="apellido">Apellido</label>
+                                <input type="text" name="apellido" id="apellido" required>
+                            </p>
+                            <p>
+                                <label for="numero">Numero de Telefono</label>
+                                <input type="tel" name="numero" id="numero" required>
+                            </p>
+                            <p>
+                                <label for="creditCard">Id Tarjeta de Credito</label>
+                                <input type="password" name="creditCard" id="creditCard" required>
+                            </p>
+                            <p>
+                                <label for="edad">Edad</label>
+                                <input type="number" name="edad" id="edad" min="5" step="1" max="23" value="5">
+                            </p>
+                            <p>
+                                <label for="favPizza">Pizza Favorita</label>
+                                <select id="favPizza">
+                                    <optgroup label="PizzasGod">
+                                        <option value="Hawaiana">Hawaiana</option>
+                                        <option value="Salami">Salami"</option>
+                                        <option value="Peperoni">Peperoni</option>
+                                    </optgroup>
+                                    <optgroup label="Pizzas meh">
+                                        <option value="Chocolate">Chocolate</option>
+                                        <option value="Camaron">Camaron</option>
+                                    </optgroup>
+                                    <option value="IDK">No me gusta la pizza, soy gay</option>
+                                </select>
+                            </p>
+                        </fieldset>
+                    </div>
+                    <div class="planning">
+                        <fieldset>
+                            <legend>Animal Favorito</legend>
+                            <p>
+                                <input type="radio" name="gatos" id="gatos">
+                                <label for="gatos">Gatos</label>
+                            </p>
+                            <p>
+                                <input type="radio" name="perros" id="perros">
+                                <label for="perros">Perros</label>
+                            </p>
+                            <p>
+                                <input type="radio" name="otro" id="otro">
+                                <label for="otro">Otros</label>
+                            </p>
+                        </fieldset>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="things-left">
+                        <fieldset>
+                            <legend>Que peli has visto</legend>
+                            <p>
+                                <input type="checkbox" name="mariposa" id="mariposa">
+                                <label for="mariposa">Efecto Mariposa</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" name="resplandor" id="resplandor">
+                                <label for="resplandor">El eterno resplandor de una mente sin recuerdos</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" name="laland" id="laland">
+                                <label for="laland">La la land</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" name="ninguna" id="ninguna">
+                                <label for="ninguna">Ninguna</label>
+                            </p>
+                        </fieldset>
+                    </div>
+                    <div class="planning">
+                        <fieldset>
+                            <legend>DM</legend>
+                            <label for="mensajes">Mensajes al DM</label><br><br>
+                            <textarea name="mensajes" id="mensajes" cols="45" rows="5"
+                                placeholder="Pam Regresa"></textarea>
+                        </fieldset>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="center">
+                        <button type="submit">Submit</button>
+                        <button>Post</button>
+                        <button type="reset">Reset</button>
+                    </div>
+                </form>
+            </article>
+        </main>
+        <br>
         <hr>
-        <section>
-            <h2>Tabla de pizzas estilo Xiaomi (calidad precio)</h2>
-            <table>
-                <caption>Pizzas</caption>
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th>Precio</th>
-                        <th>Sabor</th>
-                        <th>Calificacion</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th>Hawaiana</th>
-                        <td>Precio accesible</td>
-                        <td>El mejor sabor </td>
-                        <td>10/10</td>
-                    </tr>
-                    <tr>
-                        <th>Salami</th>
-                        <td>Precio Alto</td>
-                        <td>Sabor bueno para ratos</td>
-                        <td>9/10</td>
-                    </tr>
-                    <tr>
-                        <th>Chocolate</th>
-                        <td rowspan="2">Precio demasiado alto</td>
-                        <td rowspan="2">Dios quien creyo que <br>era buena idea</td>
-                        <td rowspan="2">4/10</td>
-                    </tr>
-                    <tr>
-                        <th>Camaron</th>
-                    </tr>
-                    <tr>
-                        <td colspan="4">A buen hambre no hay mal pan, asi que al final todas son 10/10</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-        <article id="formulario">
-            <h2>Esto es un formulario</h2>
-            <form action="submit" method="get">
-                <!-- Se usa el metodo get, porque no es un formulario grande y no es informacion de claves, etc -->
-                <div>
-                    <fieldset>
-                        <legend>Info Importante</legend>
-                        <p>
-                            <label for="nombre">Primer nombre </label>
-                            <input type="text" name="nombre" id="nombre" placeholder="Krisbell" required>
-                        </p>
-                        <p>
-                            <label for="apellido">Apellido</label>
-                            <input type="text" name="apellido" id="apellido" required>
-                        </p>
-                        <p>
-                            <label for="numero">Numero de Telefono</label>
-                            <input type="tel" name="numero" id="numero" required>
-                        </p>
-                        <p>
-                            <label for="creditCard">Id Tarjeta de Credito</label>
-                            <input type="password" name="creditCard" id="creditCard" required>
-                        </p>
-                        <p>
-                            <label for="edad">Edad</label>
-                            <input type="number" name="edad" id="edad" min="5" step="1" max="23" value="5">
-                        </p>
-                        <p>
-                            <label for="pizza">Pizza Favorita</label>
-                            <select id="favPizza">
-                                <optgroup label="PizzasGod">
-                                    <option value="Hawaiana">Hawaiana</option>
-                                    <option value="Salami">Salami"</option>
-                                    <option value="Peperoni">Peperoni</option>
-                                </optgroup>
-                                <optgroup label="Pizzas meh">
-                                    <option value="Chocolate">Chocolate</option>
-                                    <option value="Camaron">Camaron</option>
-                                </optgroup>
-                                <option value="IDK">No me gusta la pizza, soy gay</option>
-                            </select>
-                        </p>
-                    </fieldset>
-                </div>
-                <div>
-                    <fieldset>
-                        <legend>Animal Favorito</legend>
-                        <p>
-                            <input type="radio" name="gatos" id="gatos">
-                            <label for="gatos">Gatos</label>
-                        </p>
-                        <p>
-                            <input type="radio" name="perros" id="perros">
-                            <label for="perros">Perros</label>
-                        </p>
-                        <p>
-                            <input type="radio" name="otro" id="otro">
-                            <label for="otro">Otros</label>
-                        </p>
-                    </fieldset>
-                </div>
-                <div>
-                    <fieldset>
-                        <legend>Que peli has visto</legend>
-                        <p>
-                            <input type="checkbox" name="mariposa" id="mariposa">
-                            <label for="mariposa">Efecto Mariposa</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" name="resplandor" id="resplandor">
-                            <label for="resplandor">El eterno resplandor de una mente sin recuerdos</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" name="laland" id="laland">
-                            <label for="laland">La la land</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" name="ninguna" id="ninguna">
-                            <label for="ninguna">Ninguna</label>
-                        </p>
-                    </fieldset>
-                </div>
-                <div>
-                    <fieldset>
-                        <legend>DM</legend>
-                        <label for="mensajes">Mensajes al DM</label><br><br>
-                        <textarea name="mensajes" id="mensajes" cols="45" rows="5" placeholder="Pam Regresa"></textarea>
-                    </fieldset>
-                </div>
-                <button type="submit">Submit</button>
-                <button type="post">Post</button>
-                <button type="reset">Reset</button>
-            </form>
-        </article>
-    </main>
-    <br>
-    <hr>
-    <footer>
-        <p>&copy; Carlos Hernandez<br>
-            Contacos:<strong>099-Dios-quiero-un-brownie</strong>
-        </p>
-    </footer>
-
+        <footer>
+            <p>&copy; Carlos Hernandez<br>
+                Contacos:<strong>099-Dios-quiero-un-brownie</strong>
+            </p>
+        </footer>
+    </div>
 </body>
 
 </html>

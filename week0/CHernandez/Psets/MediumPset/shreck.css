@@ -1,17 +1,24 @@
+.container{
+    width: 95%;
+    margin: 0px auto;
+}
+
 html{
     font-size: 24px;
     font-family: 'Times New Roman', Times, serif;
 }
 body{
-    background-color: rgb(10,10, 10);
+    background-color: #131414;
     color: aliceblue;
-    
 }
 a:link{
-    color: red;
+    color: rgb(236, 222, 91);
 }
 a:visited{
     color:beige;
+}
+nav a:link, nav a:visited{
+    color: #131414;
 }
 table,td,th,caption,tr{
     border-collapse: collapse;
@@ -21,4 +28,64 @@ table,td,th,caption,tr{
 th{
     background-color: rgb(163, 210, 224);
     color: black;
+}
+nav {
+    background: #C5F5FA;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+.clear{
+    clear: both;
+}
+
+.planning{
+    float: right;
+    width: 50%;
+}
+.things-left{
+    float: left;
+    width: 50%;
+}
+.center{
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+.centrar-tabla{
+    margin-left: auto;
+    margin-right: auto;
+}
+form fieldset{
+    border-radius: 30px;
+    border-color: #F8E5A5;
+}
+button{
+    background-color: #F8E5A5;
+    color: #131414;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+button:hover{
+    transform: scale(1.1);
 }
