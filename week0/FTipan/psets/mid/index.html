@@ -14,7 +14,7 @@
 			<p><strong>Task:</strong> Recreate the following <a href="https://html-101-nu.vercel.app/">web page</a></p>
 			<hr>
 			<nav>
-				<ul>
+				<ul class="square_index">
 					<li><a href="#tecnologias">Tecnologías a aprender</a></li>
 					<li><a href="#roadmap">Roadmap</a></li>
 					<li><a href="#ubicacion">Ubicación</a></li>
@@ -67,42 +67,95 @@
 				<p>Programar de verdad y ya no solo aplicaciones de consola todas qleras</p>
 			</section>
 			<hr>
+			<table>
+				<tr>
+					<th scope="col" colspan="3" style="background-color: rgb(171, 111, 92)">New Table</th>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<th scope="col">Programming Languages</th>
+					<th scope="col">Difficulties</th>
+				</tr>
+				<tr>
+					<th scope="row">Friendly Languages</th>
+					<td>Python</td>
+					<td>Very firendly language for beginners</td>
+				</tr>
+				<tr>
+					<th scope="row" rowspan="2">Cryptic Languages</th>
+					<td rowspan="2">C</td>
+					<td>The complete opposite of python, very cryptic</td>
+				</tr>
+				<tr>
+					<td>Another row in C, cause is rowspan</td>
+				</tr>
+				<tr>
+					<th scope="row">This a table row header</th>
+					<td>HTML</td>
+					<td>Not really difficult but it has a lot of things to learn</td>
+				</tr>
+				<tr>
+					<td colspan="3">Every programming language can become challenging,<br>but you should try to know at least a bir of every one</td>
+				</tr>
+			</table>
+
+			<hr>
 
 			<section id="formulario">
 				<h2>Que guallako eres? Llena este formulario</h2>
-				<h3>Información Personal</h3>
-				<form>
-					<label for="nombre">Primer nombre:</label>
-					<input type="text" id="nombre" value="Ashanga"><br>
-					
-					<label for="apellido">Apellido:</label>
-					<input type="text" id="apellido" value="Damerval"><br>
+				<form action="/mid/resp-pagina" method="post">
+					<div class="formulario_caja">
+						<h3>Información Personal</h3>
 
-					<label for="contrasena">Contraseña:</label>
-					<input type="password" id="contrasena" value="wazaaaaaa"><br>
+						<label for="nombre">Primer nombre:</label>
+						<input type="text" id="nombre" name="personal_data" value="Ashanga"><br>
 
-					<label for="numero_telf">Número de teléfono:</label>
-					<input type="tel" id="numero_telf" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" value="666-69-666">
-				</form>
+						<label for="apellido">Apellido:</label>
+						<input type="text" id="apellido" name="personal_data" value="Damerval"><br>
 
-				<h3>Comida Favorita</h3>
-				<form>
-					<input type="radio" id="encebollado" name="comida_favorita" value="Encebollado">
-  					<label for="encebollado">Encebollado</label><br>
+						<label for="contrasena">Contraseña:</label>
+						<input type="password" id="contrasena" name="personal_data" value="wazaaaaaa"><br>
 
-					<input type="radio" id="ceviche" name="comida_favorita" value="Ceviche">
-  					<label for="ceviche">Ceviche</label><br>
+						<label for="numero_telf">Número de teléfono:</label>
+						<input type="tel" id="numero_telf" name="personal_data" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" value="666-69-666">
+					</div>
 
-					<input type="radio" id="pescado" name="comida_favorita" value="Pescado">
-  					<label for="pescado">Pescado</label><br>
-				</form>
+					<div class="formulario_caja">
+						<h3>Comida Favorita</h3>
 
-				<h3>Equipo de futbol favorito</h3>
-				<form>
-					<input type="checkbox" id="barcelona" name="equipo_fav" value="Idolosh">
-  					<label for="barcelona"> Idolosh</label><br>
-  					<input type="checkbox" id="emelec" name="equipo_fav" value="emelec">
-  					<label for="vehicle2"> Emelec</label><br>	
+						<input type="radio" id="encebollado" name="fav_food" value="Encebollado">
+  						<label for="encebollado">Encebollado</label><br>
+
+						<input type="radio" id="ceviche" name="fav_food" value="Ceviche">
+  						<label for="ceviche">Ceviche</label><br>
+
+						<input type="radio" id="pescado" name="fav_food" value="Pescado">
+  						<label for="pescado">Pescado</label><br>
+					</div>
+
+					<div class="formulario_caja">
+						<h3>Equipo de fútbol favorito</h3>
+
+						<input type="checkbox" id="barcelona" name="fav_soccer_team" value="Idolosh">
+  						<label for="barcelona"> Idolosh</label><br>
+
+  						<input type="checkbox" id="emelec" name="fav_soccer_team" value="emelec">
+  						<label for="vehicle2"> Emelec</label><br>
+					</div>
+
+					<div class="formulario_caja">
+						<h3>Enviar un comentario</h3>
+						<p>Escriba su mensaje:</p>
+
+						<textarea id="msg" name="comentario">
+							Escriba algo pofavo
+						</textarea>
+					</div>
+		
+					<button type="submit">Enviar</button>
+					<button type="submit">Post</button>
+					<button type="reset">Reestablecer</button>
+
 				</form>
 			</section>
 		</main>
