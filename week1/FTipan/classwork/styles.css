@@ -1,0 +1,76 @@
+body {
+	margin: 0;
+	padding: 0;
+    font-family: 'Roboto';font-size: 20px;
+}
+
+h1{
+	font-size: 30px;
+	text-align: center;	
+	text-decoration: underline;
+}
+
+footer{
+	position: absolute;
+	width: 99%;
+	height: 5%;
+	padding: 8px;
+	bottom: 0;
+	left: 0;
+	z-index: 10;
+	background-size: cover;
+	background-color: black;
+	color:white;
+}
+
+main{
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.form-box{
+	margin:10px;
+	color:white;
+	width: 30%;
+	border: 5px solid rgb(108, 183, 227);
+	background-color: rgb(41, 66, 135);
+	padding: 10px;
+	border-radius: 15px;
+}
+
+.input-content-box{
+	padding: 3px;
+	line-height: 50px;
+}
+
+.submit-btn{
+	margin: 8px;
+	border-radius: 8px;
+	cursor:pointer;
+	color:white;
+	background-color: rgb(96, 142, 215);
+	font-size: 0.8em;
+}
+
+.form-response{
+	margin:10px;
+	position: absolute;
+	top:100%;
+	color:white;
+	width: 30%;
+	border: 5px solid rgb(73, 168, 185);
+	background-color: rgb(37, 133, 119);
+	padding: 10px;
+	border-radius: 15px;
+	text-align: center;
+
+	opacity: 0;
+    pointer-events: none;
+    transition: 0.2s;
+}
+
+.form-response_active{
+    opacity: 1;
+    pointer-events: fill;
+}

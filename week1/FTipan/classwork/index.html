@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+    	<meta name="author" content="Fréderick Tipán" />
+		<meta name="description" content="Interactive Form"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+		<link rel="stylesheet" href="styles.css"/>
+	</head>
+	<body>
+		<header>
+			<h1>Simple IoT Form</h1>
+		</header>
+		<main>
+			<section id="form" class="form-box">
+				<form id="iot_form" action="" method="get">
+					<div class="input-content-box">
+						<label for="name">Introduzca su nombre: </label>
+						<input type="text" id="name" name="user_name" value="" required><br>
+
+						<label for="iot">Escoja su IoT preferido: </label>
+						<select id="iot" name="selected-oit" required>
+							<option value="reguladora de luz">Reguladora de luz</option>
+							<option value="robots de limpieza">Robots de limpieza</option>
+							<option value="sistemas de seguridad doméstica">Sistemas de seguridad doméstica</option>
+							<option value="vehículo automático">Vehículo automático</option>
+							<option value="semáforos inteligentes">Semáforos inteligentes</option>
+						</select>
+					</div>
+					<button type="submit" class="submit-btn">Enviar</button>
+				</form>
+			</section>
+
+			<section id="response" class="form-response">
+				<p id="form-inner-message">TEXt here!</p>
+			</section>
+		</main>
+		<footer>
+			©2024 - Frederick Tipán	
+		</footer>
+		<script src="scripts/main.js"></script>
+	</body>
+</html>
