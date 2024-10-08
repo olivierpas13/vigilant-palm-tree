@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+    	<meta name="author" content="Fréderick Tipán" />
+		<meta name="description" content="IWeb-based application for minimum coin calculation"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="styles.css"/>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1>Problem Set 1 - Week 1</h1>
+			<p><i>
+				Create a web-based application that calculates the minimum number of coins (quarters, dimes, nickels, and pennies) required to make a given amount of change. The user will input an amount of money in dollars and cents, and the program should output the number of each type of coin needed, as well as the total number of coins.
+			</i></p>
+		</header>
+		<main>
+			<section class="input-box">
+				<h2>Calculadora de Cambio</h2>
+				<form action="" method="get" class="input-form">
+					<label for="currency_input">Ingrese la cantidad de dinero</label><br>
+					<input type="text" name="currency_input" id="currency_input" pattern="^\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" placeholder="10.25" required>
+					<button type="submit" class="calc-btn">Calcular</button>
+				</form>
+				
+			</section>
+			<section class="result-box">
+				<ul class="coins-list">
+					<li>Monedas de 25 ctvs: <p id="quarters">0</p></li>
+					<li>Monedas de 10 ctvs: <p id="dimes">0</p></li>
+					<li>Monedas de 5 ctvs: <p id="nickels">0</p></li>
+					<li>Monedas de 1 ctv: <p id="pennies">0</p></li>
+				</ul>
+				<p>Total: <strong id="total_coins" class="num-pulse">0</strong> monedas</p>
+			</section>
+		</main>
+		<footer>
+			<span class="footer-title">Webdev 101</span>
+			<ul class="socials">
+				<li><a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a></li>
+				<li><a href="https://x.com/"><i class="bi bi-twitter-x"></i></a></li>
+				<li><a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a></li>
+				<li><a href="https://www.tiktok.com/"><i class="bi bi-tiktok"></i></a></li>
+			</ul>
+			<p>&copy; 2024 Fréderick Tipán</p>
+		</footer>
+
+		<script src="main.js"></script>
+	</body>
+</html>
