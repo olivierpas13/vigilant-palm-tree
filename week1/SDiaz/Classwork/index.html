@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Week1</title>
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+<body>
+    <main>
+        <header>
+            <h1 style="text-align: center; color: rgb(174, 165, 201);" > Favorite IoT</h1>
+        </header>
+
+        <section class="tema"></section>
+        <form id="iotForm">
+            <fieldset>
+                <section class="forms">
+                    <label for="firstName"> First Name: </label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Insert your First Name" required>
+                </section>
+
+                <section class="forms">
+                    <label for="IoT">Select your favorite IoT</Select></label>
+                    <select id="IoT" name="IoT" required>
+                        <option value="" disabled selected>Select your favorite IoT</option>
+                        <option value="Alexa">Amazon Echo (Alexa)</option>
+                        <option value="Smart Traffic Lights">Smart Traffic Lights</option>
+                        <option value="Collaborative Robots">Cobots</option>
+                        <option value="Smart Home by Apple">Apple HomePod</option>
+                        <option value="Glucose Monitor">Glucose Monitor(Dexcom G6)</option>
+                    </select>
+                </section>
+            </fieldset>
+            
+            <section class="forms">
+                <input type="submit" value="Submit">
+            </section>
+        </form>
+
+        <section id="message" style="text-align: center; margin-top: 20px;"></section>
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Stefy Díaz </p>
+    </footer>
+    <script src="js/main.js"> </script>
+
+</body>
+</html>

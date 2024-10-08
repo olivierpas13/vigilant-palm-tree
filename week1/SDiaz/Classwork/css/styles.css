@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(54, 54, 54);
+    color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px 75px;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+p {
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.tema {
+    margin-bottom: 20px;
+}
+
+form {
+    width: 75%;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: rgb(185, 179, 202);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(195, 0, 255, 0.2);
+    color: rgb(53, 52, 52);
+}
+
+.forms {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    text-align: right;
+}
+
+input[type= "text"] {
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(88, 87, 87);
+    background-color: rgb(174, 165, 201);
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+}
+
+select,
+textarea {
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(88, 87, 87);
+    background-color: rgb(174, 165, 201);
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: both;
+}
+
+input[type="submit"],
+button {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: rgb(174, 165, 201);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border: 1px solid rgb(88, 87, 87);
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(219, 190, 194);
+}
+
+#message {
+    text-align: center;
+    background-color: rgb(174, 165, 201);
+    border: 1px solid rgb(90, 69, 102);
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 0, 255, 0.1);
+    font-weight: bold;
+    color: rgb(59, 55, 55);
+}
+
+
