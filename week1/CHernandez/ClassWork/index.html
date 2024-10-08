@@ -1,12 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Author" content="Carlos Hernandez">
-    <title>Document</title>
+    <meta name="author" content="Carlos Hernandez">
+    <link rel="stylesheet" href="shreck.css">
+    <title>ClassWork</title>
 </head>
+
 <body>
-    
+    <div class="container"> 
+        <header>
+            <h1>ClassWork</h1>
+            <p> -Create an interactive webpage that allows users to input their name and select their favorite IoT
+                device from a dropdown menu. When the form is submitted, display a personalized message (e.g.,
+                "Hello [Name], your favorite IoT device is [Device].") using JavaScript.</p>
+        </header>
+        <hr>
+        <main id="mainContent">
+            <h2>Llena porfavor</h2>
+            <form id="info">
+                <fieldset>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Krisbell" required><br><br>
+                    <label for="iotFav">IoT Device Favorite</label>
+                    <select id="iotFav">
+                        <option value="tv">Television</option>
+                        <option value="air">Aire Acondicionado</option>
+                        <option value="freeze">Refrigerador</option>
+                        <option value="car">Auto</option>
+                    </select>
+                </fieldset>
+                <div class="center">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </main>
+    </div>
+    <script src="script.js"></script>
 </body>
+
 </html>

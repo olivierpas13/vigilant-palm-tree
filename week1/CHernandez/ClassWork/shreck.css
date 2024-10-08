@@ -1,0 +1,60 @@
+.container {
+    width: 90%;
+    margin: 0 auto; 
+}
+
+header {
+    padding: 0.7rem;
+    background-color: #A09AE3;
+    border-radius: 30px;
+}
+
+html {
+    font-size: 20px; 
+    font-family: 'Times New Roman', Times, serif;
+}
+
+button {
+    background-color: #A9E78D;
+    padding: 10px 20px;
+    font-size: 0.8rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+#mainContent {
+    border-radius: 30px;
+    background-color: #A1E4E8;
+    padding: 0.5rem;
+}
+
+fieldset {
+    border-width: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+
+input, select {
+    width: 100%; 
+    max-width: 200px; 
+    font-size: 1rem; 
+}
+
+.clear {
+    clear: both; 
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
