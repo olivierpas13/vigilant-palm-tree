@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,100..800;1,100..800&display=swap');
+
+:root {
+	--container-backgorund: rgb(221, 221, 221);
+	--task-input-background: rgb(169, 169, 169);
+	--button-background: rgb(122, 130, 147);
+	--button-text-color: white;
+	--task-hover-background: rgb(202, 202, 202);
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Glory", sans-serif;
+  	font-optical-sizing: auto;
+  	font-style: normal;
+	box-sizing: border-box;
+}
+
+h1{
+	margin-bottom: 10px;
+}
+
+.container{
+	width: 100%;
+	min-height: 100vh;
+	background: linear-gradient(135deg,rgb(39, 66, 96), rgb(63, 120, 138));
+	padding: 0.6rem;
+}
+
+.form-container{
+	width: 100%;
+	max-width: 33rem;
+	background: var(--container-backgorund);
+	margin: 6.25rem auto 1.25rem;
+	padding: 40px 30px 70px;
+	border-radius: 10px;
+}
+
+.input-box{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: var(--task-input-background);
+	border-radius: 30px;
+	padding-left: 1.25rem;
+	margin-bottom: 1.5rem;
+}
+
+input.input-field{
+	flex: 1;
+	border: none;
+	outline: none;
+	background: transparent;
+	padding: 0.6rem;
+	font-size: 15px;
+}
+
+button.add-btn{
+	border: none;
+	outline: none;
+	padding: 5px 15px;
+	border-radius: 50px;
+	font-size: 25px;
+	background: var(--button-background);
+	color: var(--button-text-color);
+	cursor: pointer;
+}
+
+ul.task-list li{
+	list-style: none;
+	font-size: 15px;
+	padding: 0.75rem 0.5rem 0.75rem 3.1rem;
+	user-select: none;
+	cursor: pointer;
+	position: relative;
+}
+
+ul.task-list li:hover{
+	background-color: var(--task-hover-background);
+}
+
+ul.task-list li.checked{
+	color: gray;
+	text-decoration: line-through;
+}
+
+ul.task-list li span{
+	display: flex;
+	position: absolute;
+	right: 0;
+	top: 1px;
+	height: 2.5rem;
+	line-height: 2.5rem;
+	text-align: center;
+}
+
+ul.task-list li span img{
+	scale: 0.5;
+}
+
+ul.task-list li span img:hover{
+	opacity: 0.5;
+}

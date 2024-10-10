@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Fréderick Tipán" />
+  <meta name="description" content="Simple Todo list web-app"/>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+	<div class="form-container">
+	  <h1>To Do List</h1>
+	  <div class="input-box">
+		<input class="input-field" type="text" id="task-input" placeholder="Add a task" value="">
+		<button class="add-btn" onclick="addTask()">+</button>
+	  </div>
+	  <ul id="list-container" class="task-list">
+	  </ul>
+	</div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
