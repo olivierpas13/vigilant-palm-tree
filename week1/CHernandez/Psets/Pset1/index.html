@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Carlos Hernandez">
+    <link rel="stylesheet" href="shreck.css">
+    <title>PSet1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="text-slate-200 bg-slate-900">
+    <header class="ichi">
+        <div class="nya">
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight dark:text-slate-200">PSet1</h1>
+            <p class="mat-4 text-lg text-slate-400">Create a web-based application that calculates the minimum number of
+                coins (quarters, dimes, nickels,
+                and pennies) required to make a given amount of change. The user will input an amount of money in
+                dollars and cents, and the program should output the number of each type of coin needed, as well as the
+                total number of coins.</p>
+        </div>
+    </header>
+    <main class="nya">
+        <section>
+            <h2 class="text-xl tracking-tight font-bold mb-3 dark:text-slate-200">Obten tu cambio</h2>
+            <form class="max-w-md mx-auto" id="info">
+                <div class="relative z-0 w-full mb-5 group">
+                    <input type="text" name="quantity" id="quantity"
+                        class="block py-2.5 px-0 w-full bg-transparent border-0 border-b-2 appearance-none 
+                        text-white border-gray-600 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                        placeholder=" " pattern="^\d{1,3}(,\d{3})*(\.\d+)?$" required onfocus="setPlaceholder()" onblur="resetPlaceholder()" />
+                    <label for="quantity" class="peer-focus:font-medium absolute text-sm text-gray-400 duration-300 
+                        transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 
+                        rtl:peer-focus:left-auto peer-focus:text-blue-500 peer-placeholder-shown:scale-100 
+                        peer-placeholder-shown:translate-y-0 peer-focus:scale-95 peer-focus:-translate-y-6">
+                        Ingrese el valor</label>
+                </div>
+                <button type="submit" class="text-white bg-blue-700 hover:bg-blue-900 focus:ring-4 focus:outline-none
+                focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center transform
+                transition-transform duration-300 hover:scale-110">Enviar</button>
+            </form>
+        </section>
+        <section id="calcs"></section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="uwu.js"></script>
+</body>
+
+</html>

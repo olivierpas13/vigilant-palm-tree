@@ -1,0 +1,15 @@
+.nya{
+    width: 70%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.ichi{
+    background-color: rgba(15, 27, 42, 0.9); /* slate-900 con 80% de opacidad */
+    border-bottom: 1px solid #475569;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+section h2{
+    text-align: center;
+}
