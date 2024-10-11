@@ -1,0 +1,86 @@
+body {
+    background-color: rgb(228, 225, 198);
+    color: #500b0b;
+    font-family:'Times New Roman', Times, serif;
+    margin: 20px 75px;
+    line-height: 1.8;
+    font-size: 18px;
+}
+.tema{
+    margin-bottom: 20px;
+}
+p {
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+form {
+    width: 75%;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: rgb(44, 43, 43);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(180, 52, 52, 0.2);
+    color: rgb(255, 255, 255);
+}
+
+.forms {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    text-align: right;
+    color: rgb(255, 255, 255);
+}
+
+input[type="number"] {
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    font-style: italic;
+    border: 1px solid rgb(156, 20, 20); 
+    background-color: rgb(187, 146, 146);
+    box-sizing: border-box;
+}
+
+select,
+textarea {
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(88, 87, 87);
+    background-color: rgb(187, 146, 146);
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: both;
+}
+
+input[type="submit"],
+button {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: rgb(187, 146, 146);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    border: 1px solid rgb(197, 34, 34);
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(217, 223, 169);
+}
