@@ -10,13 +10,19 @@ iotForm.addEventListener("submit", (e) => {
 	e.preventDefault();
 
 	//get the data from all the input fields
+
+	// try using const instead of let when you are not modifying the value of the variable
+	
 	let nombre = document.getElementById("name").value;
     let iot_fav = document.getElementById("iot").value;
     
 	//build the message
+	// fstrings tend to be a better option
 	let message = "Hola " + nombre + ", tu dispositivo IoT favorito es " + iot_fav + "!";
+	// dont leave clgs on the code
 	//console.log(message);
 
+	// code lines can be reduced on several places
 	//change the text content of the response box
 	let inner_response = document.getElementById("form-inner-message");
 	inner_response.innerText = message;

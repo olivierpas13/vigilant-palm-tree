@@ -1,6 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
+overflow: hidden;
     font-family: 'Roboto';font-size: 20px;
 }
 
@@ -41,6 +42,7 @@ main{
 
 .input-content-box{
 	padding: 3px;
+	width: 100%;
 	line-height: 50px;
 }
 
