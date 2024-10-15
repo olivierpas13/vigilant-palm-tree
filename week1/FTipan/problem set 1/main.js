@@ -107,7 +107,6 @@ function countInArray(data){
 function getCoins(total_coins){
   //Get the number of coins as an object
   let denom = countInArray(total_coins);
-  
   //Update each coin field of the document depending on the object
   let tot_quarters = document.getElementById("quarters");
   let quarters_amount = 0;
@@ -117,7 +116,6 @@ function getCoins(total_coins){
   }else{
     tot_quarters.innerText = "0";
   }
-
   let tot_dimes = document.getElementById("dimes");
   let dimes_amount = 0;
   if(typeof denom["10"] != 'undefined'){
