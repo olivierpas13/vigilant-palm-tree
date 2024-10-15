@@ -1,3 +1,5 @@
+// Code could be cleaner and functions should be arrow functions to avoid hoisting problems 
+
 document.addEventListener('DOMContentLoaded', function(){
     const listForm = document.getElementById('list');
     const activitiesInput = document.getElementById('activities');
