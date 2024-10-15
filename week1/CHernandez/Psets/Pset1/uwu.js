@@ -1,4 +1,6 @@
 
+// Can use css or a premade component in a css framework to do this kind of thing
+// also this should be arrow functions, not function declarations to prevent hoisting problems
 function setPlaceholder() {
     const input = document.getElementById('quantity');
     input.placeholder = "6.69"; // Cambia el placeholder al enfocar
@@ -13,13 +15,14 @@ function resetPlaceholder() {
 
 // Lógica del algoritmo
 const getQuantity = (quantityRaw) => {
+    // this is the best way to work the problem, good job
     return Math.round(quantityRaw * 100);
 };
 
 const calculateCoins = (quantity) => {
     const coins = [25, 10, 5, 1];
     let numberOfCoins = [0, 0, 0, 0];
-
+// try to use less for n' while loops and use more high order functions (functional programming)
     for (let i = 0; i < 4; i++) {
         while (quantity >= coins[i]) {
             numberOfCoins[i]++;
@@ -30,6 +33,7 @@ const calculateCoins = (quantity) => {
     return numberOfCoins;
 };
 
+// name needs to be more meaningful
 const mainFunction = (event) => {
     event.preventDefault();
 
@@ -38,6 +42,7 @@ const mainFunction = (event) => {
 
     let numberOfCoins = calculateCoins(valueNoRaw);
 
+    // this could be done without repeating code
     const quarters = numberOfCoins[0];
     const dimes = numberOfCoins[1];
     const nickels = numberOfCoins[2];
