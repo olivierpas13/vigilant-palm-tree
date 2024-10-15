@@ -3,15 +3,18 @@ const listContainer = document.getElementById("list-container");
 
 //save the data of all the tasks in the <ul> in the local storage 
 const saveData = () =>{
+	// nice solution
 	localStorage.setItem("data",listContainer.innerHTML);
 }
 
 //create a <li> element when adding a task
 const addTask = () =>{
 	//check if the input is valid
+	// good job at validating, try using only if statement 
 	if(inputTask.value === ""){
 		alert("Por favor agregue una tarea");
-	}else{
+	}
+	else{
 		//create the <li> element and add it to the <ul>
 		const li = document.createElement("li");
 		li.innerHTML = inputTask.value;
@@ -28,6 +31,7 @@ const addTask = () =>{
 	}
 
 	//clear the task value from the input
+	// good job
 	inputTask.value = "";
 	saveData();
 }
