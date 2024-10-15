@@ -1,3 +1,5 @@
+// Great job with the algorithm logic!
+
 document.getElementById('coinExchange').addEventListener('submit', function(e){
     e.preventDefault();
 
